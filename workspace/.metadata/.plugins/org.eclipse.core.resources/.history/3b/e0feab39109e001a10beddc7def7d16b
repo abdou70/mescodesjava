@@ -1,0 +1,42 @@
+package lescodesdeabdou;
+
+import java.util.Scanner;
+
+public class main11 {
+
+	public static void main(String[] args) {
+		System.out.println("Veuillez saisir le premier entier");
+		Scanner nombre1 = new Scanner (System.in);
+		
+		int a = nombre1.nextInt();
+		
+		System.out.println("veuillez saisir l'operateur");
+		
+		Scanner caract = new Scanner (System.in);
+		
+		int op = caract.nextInt();
+		
+		System.out.println("Veuillez saisir le second entier");
+		Scanner nombre2 = new Scanner (System.in);
+		
+		int b = nombre2.nextInt();
+		int num = a-b;
+		System.out.println("Veuillez saisir 1 pour l'addition , 2 pour la soustraction , 3 pour la multiplication et 4 pour la division");
+		
+		if (op == 1) {
+			System.out.println("la somme de " + a + " et " + b + " est egal " + a+b);
+		}
+		if (op == 2) {
+			System.out.println("la soustraction de " + a + " et " + b + " est egal " + num);
+		}
+		if (op == 3) {
+			System.out.println("la multiplication de " + a + " et " + b + " est egal " + a*b);
+		}
+		if (op==4) {
+			System.out.println("la dvision de " + a + " et " + b + " est egal " + a/b);
+		
+		}
+			
+}
+
+}

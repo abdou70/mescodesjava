@@ -1,0 +1,47 @@
+/*Exercice 3 :
+Faire un programme qui saisit 3 résistances : R1, R2 et R3.
+Calculer et afficher la résistance en série : R1 + R2 +R3
+Calculer et afficher la résistance en parallèle : (R1 * R2 * R3) / (R1*R2 + R2*R3 + R1*R3)
+Version 2 :
+Demander a l’utilisateur d’indiquer son choix.
+S’il entre la valeur  1, calculer et afficher la fréquence en série.
+S’il entre la valeur 2, calculer et afficher la fréquence en parallèle.*/
+
+
+package lescodesdeabdou;
+
+import java.util.Scanner;
+
+public class main4 {
+	
+	System.out.println("veuiller la resistance R1 du circuit: ");
+	Scanner resistance1 = new Scanner (System.in);
+	 int R1 = resistance1.nextInt();
+	 
+	 System.out.println("veuiller la resistance R2 du circuit: ");
+		Scanner resistance2 = new Scanner (System.in);
+		 int R2 = resistance2.nextInt();
+		 
+		 System.out.println("veuiller la resistance R1 du circuit: ");
+			Scanner resistance3 = new Scanner (System.in);
+			 int R3 = resistance3.nextInt();
+			 
+			 int rest1 = R1 + R2 + R3 ;
+			 int rest2 = (R1 * R2 * R3) / (R1*R2 + R1*R3 + R2*R3 );
+			 System.out.println("veuillez choisir entre 1 et 2");
+			 Scanner nombre = new  Scanner (System.in);
+			     
+			 int choix = nombre.nextInt();
+			 
+			    if (choix == 1)
+			    	System.out.println("la resistance en serie est :" + rest1 );
+			    else 
+			    	System.out.println("la resistance en parallele est : " + rest2);
+			 
+	System.out.println("la resistance en serie est :" + rest1 + " et la resistance en derivation est :" + rest2);
+			
+
+}
+
+
+}

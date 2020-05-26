@@ -1,0 +1,28 @@
+package lescodesdeabdou;
+
+import java.util.Scanner;
+
+
+public class main12 {
+
+	public static void main(String[] args) {
+		System.out.println(" Veuillez saisir un entier ");
+		Scanner entier1 = new Scanner (System.in);
+		
+		int entier = entier1.nextInt();
+		
+		int div = entier/2;
+		int som = 0 ;
+		int i = 1;
+		 while (i <= div ) {
+			 
+			  if ( entier % i == 0) {
+				 
+				 som = som +i ;
+			  }
+			  i = i++;
+		 }
+	
+	}
+
+}

@@ -1,0 +1,24 @@
+package lescodesdeabdou;
+
+import java.util.Scanner;
+
+public class main2 {
+	
+	public static void main(String[] args) {
+		
+		System.out.println("veuiller saisir le premier entier a  ");
+		Scanner nombre1 = new Scanner (System.in);
+		 int a = nombre1.nextInt();
+		 System.out.println("veuiller saisir le premier entier b ");
+			Scanner nombre2 = new Scanner (System.in);
+		     int b = nombre2.nextInt();
+		   int quotient =  (a / b) ;
+		   int reste  = a%b ;
+		   int quotient2 = a/b ;
+		System.out.println("le quotient de la division de " + a + " par " + b + "est: " + quotient);
+		System.out.println("le reste de la division de " + a + " par " + b + " est :" + reste);
+		System.out.println("le quotient réel de la division de " + a + " par " + b + "est :" + quotient2);
+		
+		
+	}
+}

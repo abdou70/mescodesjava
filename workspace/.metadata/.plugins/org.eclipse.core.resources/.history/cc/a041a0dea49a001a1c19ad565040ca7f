@@ -1,0 +1,19 @@
+import java.util.Scanner
+
+
+public class main {
+
+	public static void main(String[] args) {
+		Scanner nombre = new Scanner(system.in);
+		
+		int r = 0;
+		System.out.print("veuiller le rayon de votre cercle : ");
+		
+		r = nombre.nextInt();
+		
+		System.out.print("la surface du cercle est :" + (r*r) + " est le perimetre du cercle est " + (2*r*3));
+				
+
+	}
+
+}
